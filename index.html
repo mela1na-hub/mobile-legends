@@ -8,17 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=home3" />
+  <link rel="stylesheet" href="styles.css?v=path1" />
 </head>
 <body class="page-home">
   <header class="site-header">
     <a class="logo" href="index.html">Mobile Legends</a>
     <nav class="nav" id="mainNav">
-      <a href="oyun.html" data-i18n="nav_about">About</a>
-      <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
-      <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#heroes" data-i18n="nav_heroes">Heroes</a>
+      <a href="#roles" data-i18n="nav_roles">Roles</a>
       <a href="guide.html" data-i18n="nav_equip">Equipments</a>
-      <a href="boshlash.html" data-i18n="nav_play">Play</a>
+      <a href="#play" data-i18n="nav_play">Play</a>
     </nav>
     <div class="lang-switch" role="group" aria-label="Language">
       <span class="lang-switch-label">Language</span>
@@ -46,8 +46,8 @@
             Team up. Strategize. <em>Become a legend.</em>
           </p>
           <div class="actions">
-            <a class="btn btn-play" href="boshlash.html"><span data-i18n="btn_play">Play Now</span> <span data-i18n-keep>›</span></a>
-            <a class="btn btn-store" href="oyun.html" data-i18n="btn_about">About the Game</a>
+            <a class="btn btn-play" href="#play"><span data-i18n="btn_play">Play Now</span> <span data-i18n-keep>›</span></a>
+            <a class="btn btn-store" href="#about" data-i18n="btn_about">About the Game</a>
           </div>
         </div>
       </div>
@@ -93,38 +93,94 @@
           <span data-i18n="feat_rank_p">Climb to Mythic</span>
         </article>
       </div>
+    </section>
 
-      <div class="home-explore">
-        <div class="home-explore-head">
-          <h2 data-i18n="explore_heroes">Explore Heroes</h2>
-          <a href="qahramonlar.html" data-i18n="view_all_heroes">View all heroes ›</a>
-        </div>
-        <div class="home-hero-rail" id="homeHeroRail">
-          <a class="home-hero-card" href="qahramonlar.html">
-            <img src="images/hero-alucard.png" alt="Alucard" width="280" height="360" />
-            <span>Fighter</span>
-          </a>
-          <a class="home-hero-card" href="qahramonlar.html">
-            <img src="images/hero-kdash.jpg" alt="Gusion" width="280" height="360" />
-            <span>Assassin</span>
-          </a>
-          <a class="home-hero-card" href="qahramonlar.html">
-            <img src="images/hero-mage.png" alt="Cecilion" width="280" height="360" />
-            <span>Mage</span>
-          </a>
-          <a class="home-hero-card" href="qahramonlar.html">
-            <img src="images/hero-melissa.png" alt="Melissa" width="280" height="360" />
-            <span>Marksman</span>
-          </a>
-        </div>
-        <div class="home-hero-dots" id="homeHeroDots" aria-hidden="true">
-          <span class="is-on"></span><span></span><span></span><span></span>
-        </div>
+    <section class="home-path" id="about">
+      <p class="section-eyebrow" data-i18n="about_eyebrow">About the Game</p>
+      <h2>Mobile Legends: Bang Bang</h2>
+      <p class="section-lead" data-i18n="about_lead">
+        Mobile Legends: Bang Bang (MLBB) is a 5v5 MOBA game where two teams battle to destroy the enemy base while defending their own. Teamwork, strategy, and skill are the keys to victory!
+      </p>
+      <ul class="fact-grid home-path-facts">
+        <li><span data-i18n="fact_dev">Developer</span><strong>Moonton</strong></li>
+        <li><span data-i18n="fact_release">Release Date</span><strong data-i18n="fact_release_val">July 14, 2016</strong></li>
+        <li><span data-i18n="fact_mode">Game Mode</span><strong>5v5</strong></li>
+        <li><span data-i18n="fact_platform">Platform</span><strong>Android, iOS</strong></li>
+      </ul>
+      <a class="btn btn-store" href="oyun.html" data-i18n="btn_about">About the Game</a>
+    </section>
+
+    <section class="home-path" id="heroes">
+      <p class="section-eyebrow" data-i18n="heroes_eyebrow">Heroes</p>
+      <div class="home-explore-head">
+        <h2 data-i18n="heroes_title">Featured fighters</h2>
+        <a href="qahramonlar.html" data-i18n="view_all_heroes">View all heroes ›</a>
+      </div>
+      <p class="section-lead" data-i18n="heroes_lead">Selected heroes with role, playstyle, and a short overview.</p>
+      <div class="home-hero-rail" id="homeHeroRail">
+        <a class="home-hero-card" href="qahramonlar.html">
+          <img src="images/hero-alucard.png" alt="Alucard" width="280" height="360" />
+          <span>Fighter</span>
+        </a>
+        <a class="home-hero-card" href="qahramonlar.html">
+          <img src="images/hero-kdash.jpg" alt="Gusion" width="280" height="360" />
+          <span>Assassin</span>
+        </a>
+        <a class="home-hero-card" href="qahramonlar.html">
+          <img src="images/hero-mage.png" alt="Cecilion" width="280" height="360" />
+          <span>Mage</span>
+        </a>
+        <a class="home-hero-card" href="qahramonlar.html">
+          <img src="images/hero-melissa.png" alt="Melissa" width="280" height="360" />
+          <span>Marksman</span>
+        </a>
+      </div>
+      <div class="home-hero-dots" id="homeHeroDots" aria-hidden="true">
+        <span class="is-on"></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <section class="home-path" id="roles">
+      <p class="section-eyebrow" data-i18n="roles_page_eyebrow">Roles</p>
+      <h2 data-i18n="roles_page_title">Choose a lane</h2>
+      <p class="section-lead" data-i18n="roles_page_lead">Click a lane name to see its heroes. Click a hero to view skills and what they do.</p>
+      <div class="home-lane-grid">
+        <a href="rollar.html">
+          <strong data-i18n="lane_gold">Gold Lane</strong>
+          <span data-i18n="lane_gold_desc">Marksmen — farm and carry late game.</span>
+        </a>
+        <a href="rollar.html">
+          <strong data-i18n="lane_exp">EXP Lane</strong>
+          <span data-i18n="lane_exp_desc">Fighters / Tanks — duel and hold the side lane.</span>
+        </a>
+        <a href="rollar.html">
+          <strong data-i18n="lane_mid">Mid Lane</strong>
+          <span data-i18n="lane_mid_desc">Mages / Assassins — control mid and rotate.</span>
+        </a>
+        <a href="rollar.html">
+          <strong data-i18n="lane_roam">Roamer</strong>
+          <span data-i18n="lane_roam_desc">Supports / Tanks — protect, vision, and set up fights.</span>
+        </a>
+        <a href="rollar.html">
+          <strong data-i18n="lane_jungle">Jungler</strong>
+          <span data-i18n="lane_jungle_desc">Junglers — clear camps, gank, and take objectives.</span>
+        </a>
+      </div>
+      <a class="btn btn-store" href="rollar.html" data-i18n="to_roles">Roles →</a>
+    </section>
+
+    <section class="home-path home-path-play" id="play">
+      <p class="brand-sm">Mobile Legends</p>
+      <h2 data-i18n="play_title">Land of Dawn is waiting.</h2>
+      <p class="section-lead" data-i18n="play_lead">Download the game on your phone and start your first battle.</p>
+      <div class="cta-actions">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.mobile.legends" target="_blank" rel="noopener noreferrer" data-i18n="dl_google">Download on Google Play</a>
+        <a class="btn btn-store" href="https://apps.apple.com/app/mobile-legends-bang-bang/id1160056295" target="_blank" rel="noopener noreferrer" data-i18n="dl_apple">Download on App Store</a>
       </div>
     </section>
   </main>
 
-  <script src="script.js?v=home3"></script>
-  <script src="i18n.js?v=home3"></script>
+  <script src="script.js?v=path1"></script>
+  <script src="i18n.js?v=path1"></script>
 </body>
 </html>

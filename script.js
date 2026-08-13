@@ -36,3 +36,29 @@ if (homeRail && homeDots) {
     { passive: true }
   );
 }
+
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener("click", () => {
+    if (header) {
+      header.classList.remove("nav-open");
+      if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
+const homePaths = document.querySelectorAll(".home-path");
+if (homePaths.length) {
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("is-open");
+        });
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+    );
+    homePaths.forEach((el) => io.observe(el));
+  } else {
+    homePaths.forEach((el) => el.classList.add("is-open"));
+  }
+}

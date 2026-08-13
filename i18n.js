@@ -1286,7 +1286,6 @@
       const key = el.getAttribute("data-i18n-aria");
       if (key && pack[key] == null) return;
       el.setAttribute("aria-label", pack[key]);
-      if (el.closest(".side-rail")) el.setAttribute("title", pack[key]);
     });
 
     const langLabel = document.querySelector(".lang-switch-label");
@@ -1376,55 +1375,6 @@
     }
   }
 
-  function ensureSideRail() {
-    if (document.querySelector(".side-rail")) return;
-    if (document.body.classList.contains("admin-body")) return;
-
-    const items = [
-      [
-        "oyun.html",
-        "nav_about",
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>',
-      ],
-      [
-        "qahramonlar.html",
-        "nav_heroes",
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c.6-3.2 2.8-5 5-5s4.4 1.8 5 5M14 19c.4-2.2 1.8-3.5 3.5-3.5 1.6 0 2.8 1 3.2 3.5"/></svg>',
-      ],
-      [
-        "rollar.html",
-        "nav_roles",
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l3 6 6 .9-4.5 4.4 1.1 6.2L12 17.5 6.4 20.5 7.5 14.3 3 9.9 9 9z"/></svg>',
-      ],
-      [
-        "guide.html",
-        "nav_equip",
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12v11H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
-      ],
-      [
-        "boshlash.html",
-        "nav_play",
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6l12 6-12 6V6z"/></svg>',
-      ],
-    ];
-
-    const nav = document.createElement("nav");
-    nav.className = "side-rail";
-    nav.setAttribute("aria-label", "Pages");
-    const here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-
-    items.forEach(([href, key, svg]) => {
-      const a = document.createElement("a");
-      a.href = href;
-      a.setAttribute("data-i18n-aria", key);
-      a.innerHTML = svg;
-      if (here === href) a.classList.add("is-active");
-      nav.appendChild(a);
-    });
-
-    document.body.appendChild(nav);
-  }
-
   function bindSwitcher() {
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
@@ -1457,7 +1407,6 @@
 
   ensureSwitcher();
   ensureAdminLink();
-  ensureSideRail();
   bindSwitcher();
   tagNav();
   setLang(getLang());
