@@ -21,3 +21,18 @@ window.addEventListener(
   },
   { passive: true }
 );
+
+const homeRail = document.getElementById("homeHeroRail");
+const homeDots = document.getElementById("homeHeroDots");
+if (homeRail && homeDots) {
+  const dots = [...homeDots.querySelectorAll("span")];
+  homeRail.addEventListener(
+    "scroll",
+    () => {
+      const max = homeRail.scrollWidth - homeRail.clientWidth;
+      const i = max <= 0 ? 0 : Math.round((homeRail.scrollLeft / max) * (dots.length - 1));
+      dots.forEach((dot, n) => dot.classList.toggle("is-on", n === i));
+    },
+    { passive: true }
+  );
+}
