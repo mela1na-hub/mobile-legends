@@ -1,5 +1,9 @@
 const header = document.querySelector(".site-header");
 const menuBtn = document.getElementById("menuBtn");
+document.querySelectorAll(".side-rail").forEach((el) => el.remove());
+window.addEventListener("load", () => {
+  document.querySelectorAll(".side-rail").forEach((el) => el.remove());
+});
 
 if (menuBtn && header) {
   menuBtn.addEventListener("click", () => {

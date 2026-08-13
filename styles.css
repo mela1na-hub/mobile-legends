@@ -36,6 +36,10 @@ body {
   font-size: 0.95rem;
 }
 
+.side-rail {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
