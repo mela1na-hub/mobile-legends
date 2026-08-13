@@ -1,0 +1,154 @@
+{
+  "heroes": [
+    {
+      "name": "Melissa",
+      "role": "Marksman",
+      "image": "images/hero-melissa.png",
+      "skin": {
+        "en": "Skin: Sparkle (ALLSTAR)",
+        "uz": "Skin: Sparkle (ALLSTAR)",
+        "ru": "Скин: Sparkle (ALLSTAR)"
+      },
+      "desc": {
+        "en": "Gold Lane marksman. Deals steady ranged damage and can carry late game with mobility and attack speed. In her Sparkle skin she owns the stage — guitar, energy, and battlefield flair.",
+        "uz": "Gold Lane marksman. Barqaror uzoqdan zarar beradi, kech o‘yinda mobility va attack speed bilan carry qiladi. Sparkle skinida sahna uniki — gitara, energiya va jang maydoni uslubi.",
+        "ru": "Стрелок на Gold Lane. Стабильный дальний урон и керри в лейте за счёт мобильности и скорости атаки. В скине Sparkle она хозяйка сцены — гитара, энергия и стиль на поле."
+      },
+      "style": {
+        "en": "Ranged DPS / kiting",
+        "uz": "Uzoqdan DPS / kiting",
+        "ru": "Дальний DPS / кайтинг"
+      },
+      "tip": {
+        "en": "Farm well and fight with your team.",
+        "uz": "Yaxshi farm qiling va jamoa bilan jang qiling.",
+        "ru": "Хорошо фармите и деритесь с командой."
+      }
+    },
+    {
+      "name": "Gusion",
+      "role": "Assassin",
+      "image": "images/hero-kdash.png",
+      "skin": {
+        "en": "Skin: K' (MLBB × The King of Fighters)",
+        "uz": "Skin: K' (MLBB × The King of Fighters)",
+        "ru": "Скин: K' (MLBB × The King of Fighters)"
+      },
+      "desc": {
+        "en": "Jungle / Mid assassin famous for dagger combos and high burst. The K' skin gives him the KOF fire look — still the same hero: dive squishies, reset, and leave.",
+        "uz": "Jungle / Mid assassin — xanjar kombinatsiyasi va yuqori burst bilan mashhur. K' skini KOF olov ko‘rinishini beradi: squishylarga sho‘ng‘ing, reset, chiqing.",
+        "ru": "Ассасин джунглей/мида, известный комбо кинжалов и высоким бёрстом. Скин K' даёт огненный вид KOF — тот же герой: ныряй в скваши, ресет и уходи."
+      },
+      "style": {
+        "en": "Burst / chase",
+        "uz": "Burst / ta’qib",
+        "ru": "Бёрст / преследование"
+      },
+      "tip": {
+        "en": "Target squishies and avoid overextending.",
+        "uz": "Squishylarni nishonga oling, haddan tashqari chuqur kirmang.",
+        "ru": "Целитесь в скваши и не переигрывайте."
+      }
+    },
+    {
+      "name": "Cecilion",
+      "role": "Mage",
+      "image": "images/hero-mage.png",
+      "skin": {
+        "en": "Default / Embrace of Night look",
+        "uz": "Default / Embrace of Night ko‘rinishi",
+        "ru": "Обычный / Embrace of Night"
+      },
+      "desc": {
+        "en": "Mid Lane mage who stacks Magic Power during the match. Long-range poke, strong late-game burst, and teamfight pressure — especially when paired with Carmilla.",
+        "uz": "O‘yin davomida Magic Power yig‘adigan Mid mage. Uzoq poke, kuchli late burst va teamfight bosimi — Carmilla bilan ayniqsa xavfli.",
+        "ru": "Мид-маг, набирающий магическую силу в матче. Дальний пок, сильный лейт-бёрст и давление в тимфайтах — особенно с Carmilla."
+      },
+      "style": {
+        "en": "Poke / scaling / teamfight",
+        "uz": "Poke / scaling / teamfight",
+        "ru": "Пок / скейл / тимфайт"
+      },
+      "tip": {
+        "en": "Keep stacking — he gets much stronger later.",
+        "uz": "Stack to‘plashda davom eting — keyinroq ancha kuchli bo‘ladi.",
+        "ru": "Копите стаки — позже он намного сильнее."
+      }
+    },
+    {
+      "name": "Belerick",
+      "role": "Tank",
+      "image": "images/hero-grock.png",
+      "skin": {
+        "en": "Mecha / special skin look",
+        "uz": "Mecha / maxsus skin",
+        "ru": "Меха / особый скин"
+      },
+      "desc": {
+        "en": "High-HP tank who thrives in the front line. Punishes attackers, shields and protects allies, and anchors teamfights with strong sustain.",
+        "uz": "Yuqori HP tank, frontlineda yashaydi. Hujumchilarni jazolaydi, himoya beradi va teamfightni ushlab turadi.",
+        "ru": "Танк с высоким HP на фронтлайне. Наказывает атакующих, щитует союзников и держит тимфайты за счёт сустейна."
+      },
+      "style": {
+        "en": "Frontline / peel / sustain",
+        "uz": "Frontline / peel / sustain",
+        "ru": "Фронтлайн / пил / сустейн"
+      },
+      "tip": {
+        "en": "Stack HP and stay in front of your carries.",
+        "uz": "HP yig‘ing va carrylar oldida turing.",
+        "ru": "Копите HP и стойте перед керри."
+      }
+    },
+    {
+      "name": "Carmilla",
+      "role": "Support / Tank",
+      "image": "images/hero-selena.png",
+      "skin": {
+        "en": "Gothic / Abyssal look",
+        "uz": "Gothic / Abyssal ko‘rinishi",
+        "ru": "Готика / Abyssal"
+      },
+      "desc": {
+        "en": "Roam support who links enemies and spreads crowd control through her curse. Strong set-up in teamfights — especially deadly when paired with Cecilion.",
+        "uz": "Dushmanlarni bog‘lab, la’nat orqali CC tarqatadigan roam support. Teamfight setup kuchli — Cecilion bilan ayniqsa o‘limli.",
+        "ru": "Роум-саппорт, связывающий врагов и разносящий контроль проклятием. Сильный сетап — особенно опасна с Cecilion."
+      },
+      "style": {
+        "en": "Engage / link / teamfight",
+        "uz": "Engage / bog‘lash / teamfight",
+        "ru": "Энгейдж / связь / тимфайт"
+      },
+      "tip": {
+        "en": "Land your curse on clustered enemies for max value.",
+        "uz": "La’natni to‘plangan dushmanlarga tushiring.",
+        "ru": "Накладывайте проклятие на скопление врагов."
+      }
+    },
+    {
+      "name": "Johnson",
+      "role": "Tank / Support",
+      "image": "images/hero-johnson.png",
+      "skin": {
+        "en": "Skin: The Mustang (Transformers)",
+        "uz": "Skin: The Mustang (Transformers)",
+        "ru": "Скин: The Mustang (Transformers)"
+      },
+      "desc": {
+        "en": "Transforms into a car, picks up an ally, and crashes into enemies. Ultimate enables fast map-wide engages — one of the most iconic roam tanks.",
+        "uz": "Mashinaga aylanadi, ittifoqchini olib, dushmanga uriladi. Ultimate tez xarita bo‘ylab engage beradi — eng mashhur roam tanklardan.",
+        "ru": "Превращается в машину, подбирает союзника и врезается во врагов. Ульт даёт быстрые энгейджи по карте — один из культовых роум-танков."
+      },
+      "style": {
+        "en": "Engage / peel / roam",
+        "uz": "Engage / peel / roam",
+        "ru": "Энгейдж / пил / роум"
+      },
+      "tip": {
+        "en": "Pick a good angle and timing for Ultimate.",
+        "uz": "Ultimate uchun yaxshi burchak va vaqtni tanlang.",
+        "ru": "Выбирайте хороший угол и тайминг ульты."
+      }
+    }
+  ]
+}

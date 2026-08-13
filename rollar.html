@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roles — Mobile Legends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">Mobile Legends</a>
+    <nav class="nav" id="mainNav">
+      <a href="oyun.html" data-i18n="nav_about">About</a>
+      <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+      <a class="is-active" href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a href="guide.html" data-i18n="nav_equip">Equipments</a>
+      <a href="boshlash.html" data-i18n="nav_play">Play</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="section roles-page">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="roles_page_eyebrow">Roles</p>
+        <h2 data-i18n="roles_page_title">Choose a lane</h2>
+        <p class="section-lead" data-i18n="roles_page_lead">Click a lane name to see its heroes. Click a hero to view skills and what they do.</p>
+
+        <div class="lane-tabs" id="laneTabs" role="tablist">
+          <button type="button" class="lane-tab" data-lane="gold" role="tab" data-i18n="lane_gold">Gold Lane</button>
+          <button type="button" class="lane-tab" data-lane="exp" role="tab" data-i18n="lane_exp">EXP Lane</button>
+          <button type="button" class="lane-tab" data-lane="mid" role="tab" data-i18n="lane_mid">Mid Lane</button>
+          <button type="button" class="lane-tab" data-lane="roam" role="tab" data-i18n="lane_roam">Roamer</button>
+          <button type="button" class="lane-tab" data-lane="jungle" role="tab" data-i18n="lane_jungle">Jungler</button>
+        </div>
+
+        <div class="lane-panel" id="lanePanel" hidden>
+          <div class="lane-panel-head">
+            <h3 id="laneTitle"></h3>
+            <p id="laneDesc"></p>
+          </div>
+          <div class="lane-heroes" id="laneHeroes"></div>
+        </div>
+
+        <p class="lane-hint" id="laneHint" data-i18n="lane_hint">Select a lane above to get started.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="hero-modal" id="heroModal" hidden>
+    <div class="hero-modal-backdrop" data-close></div>
+    <div class="hero-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button type="button" class="hero-modal-close" data-close data-i18n-aria="close" aria-label="Close">×</button>
+      <div class="hero-modal-body">
+        <div class="hero-modal-top">
+          <img id="modalIcon" alt="" width="96" height="96" />
+          <div>
+            <p class="chip-role" id="modalType"></p>
+            <h3 id="modalName"></h3>
+            <p id="modalDes"></p>
+          </div>
+        </div>
+        <h4 class="skills-title" data-i18n="skills_title">Skills</h4>
+        <div class="skill-list" id="modalSkills"></div>
+        <div class="gameplay-block" id="modalGameplay">
+          <h4 class="skills-title" data-i18n="gameplay_title">Gameplay</h4>
+          <p class="gameplay-lead" id="gameplayLead" data-i18n="gameplay_lead">Watch this hero’s gameplay on YouTube.</p>
+          <div class="gameplay-frame-wrap">
+            <iframe
+              id="gameplayFrame"
+              class="gameplay-frame"
+              title="Hero gameplay on YouTube"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="gameplay-actions">
+            <a class="btn btn-play" id="gameplayLink" href="#" target="_blank" rel="noopener noreferrer" data-i18n="gameplay_open">Open on YouTube</a>
+            <a class="btn btn-store" id="gameplayGuideLink" href="#" target="_blank" rel="noopener noreferrer" data-i18n="gameplay_guides">Guides &amp; tips</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-store hero-modal-dismiss" data-close data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p><span>Mobile Legends</span> — fan site. Official game by Moonton / Mobile Legends: Bang Bang.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="i18n.js?v=admin-ico1"></script>
+  <script src="rollar.js?v=i18n3"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+[
+    {
+        "Name":  "Alucard",
+        "Id":  "7",
+        "Type":  "Fighter",
+        "Cover":  "images/hero-alucard.png",
+        "Icon":  "images/icon-alucard.png"
+    },
+    {
+        "Name":  "Miya",
+        "Id":  "1",
+        "Type":  "Marksman",
+        "Cover":  "images/hero-miya.png",
+        "Icon":  "images/icon-miya.png"
+    },
+    {
+        "Name":  "Eudora",
+        "Id":  "15",
+        "Type":  "Mage",
+        "Cover":  "images/hero-eudora.png",
+        "Icon":  "images/icon-eudora.png"
+    },
+    {
+        "Name":  "Tigreal",
+        "Id":  "6",
+        "Type":  "Tank",
+        "Cover":  "images/hero-tigreal.jpg",
+        "Icon":  "images/icon-tigreal.png"
+    },
+    {
+        "Name":  "Natalia",
+        "Id":  "24",
+        "Type":  "Assassin",
+        "Cover":  "images/hero-natalia.png",
+        "Icon":  "images/icon-natalia.png"
+    },
+    {
+        "Name":  "Gusion",
+        "Id":  "56",
+        "Type":  "Assassin",
+        "Cover":  "images/hero-gusion.png",
+        "Icon":  "images/icon-gusion.png"
+    },
+    {
+        "Name":  "Fanny",
+        "Id":  "17",
+        "Type":  "Assassin",
+        "Cover":  "images/hero-fanny.png",
+        "Icon":  "images/icon-fanny.png"
+    },
+    {
+        "Name":  "Kagura",
+        "Id":  "25",
+        "Type":  "Mage",
+        "Cover":  "images/hero-kagura.png",
+        "Icon":  "images/icon-kagura.png"
+    },
+    {
+        "Name":  "Chou",
+        "Id":  "26",
+        "Type":  "Fighter",
+        "Cover":  "images/hero-chou.png",
+        "Icon":  "images/icon-chou.png"
+    },
+    {
+        "Name":  "Layla",
+        "Id":  "18",
+        "Type":  "Marksman",
+        "Cover":  "images/hero-layla.png",
+        "Icon":  "images/icon-layla.png"
+    }
+]

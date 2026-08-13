@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boshqaruv — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+  <link rel="stylesheet" href="admin.css?v=2" />
+  <script>
+    if (!sessionStorage.getItem("mlbb_admin_csrf")) {
+      location.replace("admin.html");
+    }
+  </script>
+</head>
+<body class="admin-body">
+  <div id="appView" class="admin-app">
+    <aside class="admin-side">
+      <a class="logo" href="index.html">Mobile Legends</a>
+      <p class="admin-side-label">Boshqaruv</p>
+      <nav class="admin-nav">
+        <button type="button" class="is-active" data-view="dash">Dashboard</button>
+        <button type="button" data-view="featured">Tanlangan qahramonlar</button>
+        <button type="button" data-view="heroes">Barcha qahramonlar</button>
+        <button type="button" data-view="items">Ekipmanlar</button>
+        <button type="button" data-view="password">Parol</button>
+      </nav>
+      <div class="admin-side-foot">
+        <p id="whoami"></p>
+        <button type="button" class="btn btn-store" id="logoutBtn">Chiqish</button>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      <header class="admin-top">
+        <h2 id="viewTitle">Dashboard</h2>
+        <a class="btn btn-store" href="index.html" target="_blank" rel="noopener">Saytni ochish</a>
+      </header>
+      <div class="admin-content" id="viewRoot"></div>
+    </div>
+  </div>
+
+  <div class="admin-modal" id="editModal" hidden>
+    <div class="admin-modal-backdrop" data-close-modal></div>
+    <div class="admin-modal-card" role="dialog" aria-modal="true">
+      <button type="button" class="hero-modal-close" data-close-modal aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Tahrirlash</h3>
+      <form id="editForm" class="admin-form"></form>
+    </div>
+  </div>
+
+  <div class="admin-toast" id="toast" hidden></div>
+  <script src="admin.js?v=3"></script>
+</body>
+</html>

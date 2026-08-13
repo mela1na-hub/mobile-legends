@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipments — Equipment &amp; Farming | Mobile Legends</title>
+  <meta name="description" content="MLBB guide — equipment items with icons, names and functions, plus farming tips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">Mobile Legends</a>
+    <nav class="nav" id="mainNav">
+      <a href="oyun.html" data-i18n="nav_about">About</a>
+      <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+      <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a class="is-active" href="guide.html" data-i18n="nav_equip">Equipments</a>
+      <a href="boshlash.html" data-i18n="nav_play">Play</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page about-page">
+    <section class="about-block about-intro">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="eq_eyebrow">Equipments</p>
+        <h1 data-i18n="eq_title">Equipment &amp; farming</h1>
+        <p class="section-lead wide" data-i18n="eq_lead">
+          Each item below shows its icon, name, and what it does in battle.
+          After that: how to farm gold, EXP, and map objectives.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-block" id="equipment">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="shop_eyebrow">Shop Items</p>
+        <h2 data-i18n="shop_title">Equipment — image, name &amp; function</h2>
+        <p class="section-lead wide" data-i18n="shop_lead">
+          Filter by type. Icons and passives come from official Mobile Legends hero build data.
+        </p>
+        <div class="item-filters" id="itemFilters" role="tablist" aria-label="Item categories"></div>
+        <div class="items-grid" id="itemsGrid" aria-live="polite">
+          <p class="item-empty" data-i18n="item_loading">Loading equipment…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="farm_lane_eyebrow">Lane Farming</p>
+        <h2 data-i18n="farm_lane_title">Minions &amp; turrets</h2>
+        <div class="mode-grid">
+          <article>
+            <h3 data-i18n="melee_t">Melee minions</h3>
+            <p data-i18n="melee_p">Front-line creeps. Give solid gold/EXP. Last-hit them for full gold.</p>
+          </article>
+          <article>
+            <h3 data-i18n="ranged_t">Ranged minions</h3>
+            <p data-i18n="ranged_p">Glassier backline creeps. Easy to last-hit; important for wave clear tempo.</p>
+          </article>
+          <article>
+            <h3 data-i18n="siege_t">Siege / cannon minion</h3>
+            <p data-i18n="siege_p">Tankier wave unit that appears on bigger waves. High gold — prioritize the last hit.</p>
+          </article>
+          <article>
+            <h3 data-i18n="enemy_tur_t">Enemy turrets</h3>
+            <p data-i18n="enemy_tur_p">Destroying turrets gives team gold and map control. Outer → middle → inhibitor → base.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="jungle_eyebrow">Jungle Camps</p>
+        <h2 data-i18n="jungle_title">Camps used for farming</h2>
+        <div class="farm-list">
+          <article class="farm-card">
+            <h3 data-i18n="orange_t">Orange Buff (Fiend)</h3>
+            <p class="farm-role" data-i18n="orange_role">Physical junglers / fighters</p>
+            <p data-i18n="orange_p">Grants extra damage and lifesteal-style sustain while the buff lasts. Core camp for AD junglers.</p>
+          </article>
+          <article class="farm-card">
+            <h3 data-i18n="blue_t">Blue Buff (Spirit)</h3>
+            <p class="farm-role" data-i18n="blue_role">Mages / mana users</p>
+            <p data-i18n="blue_p">Improves mana regen and cooldown reduction. Mid laners often take it after the jungler finishes a clear.</p>
+          </article>
+          <article class="farm-card">
+            <h3 data-i18n="small_t">Small jungle creeps</h3>
+            <p class="farm-role" data-i18n="small_role">All junglers</p>
+            <p data-i18n="small_p">Basic camps for gold and EXP. Keep your jungle clear on cooldown to stay ahead in levels.</p>
+          </article>
+          <article class="farm-card">
+            <h3 data-i18n="litho_t">Lithowanderer</h3>
+            <p class="farm-role" data-i18n="litho_role">Lane pressure helper</p>
+            <p data-i18n="litho_p">After defeat, it walks a lane path and helps push. Great for converting jungle farm into turret pressure.</p>
+          </article>
+          <article class="farm-card">
+            <h3 data-i18n="crab_t">Crab / river camp</h3>
+            <p class="farm-role" data-i18n="crab_role">Tempo &amp; vision</p>
+            <p data-i18n="crab_p">Gives gold and map control around river. Contested early — fight only if your team can back you up.</p>
+          </article>
+          <article class="farm-card">
+            <h3 data-i18n="special_t">Inverted / special camps</h3>
+            <p class="farm-role" data-i18n="special_role">Situational</p>
+            <p data-i18n="special_p">Some patches rotate special jungle monsters. Always check the in-game tip for current buff effects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="major_eyebrow">Major Objectives</p>
+        <h2 data-i18n="major_title">Turtle &amp; Lord</h2>
+        <div class="obj-grid">
+          <article>
+            <h3 data-i18n="turtle_t">Turtle</h3>
+            <p data-i18n="turtle_p">Early–mid objective. Gives team gold and EXP. Spawns before Lord — take it when your team is stronger nearby.</p>
+          </article>
+          <article>
+            <h3 data-i18n="lord_t">Lord</h3>
+            <p data-i18n="lord_p">Late objective. When slain, summons a powerful ally that pushes a lane. Often decides the game.</p>
+          </article>
+          <article>
+            <h3 data-i18n="basecore_t">Base (Base Core)</h3>
+            <p data-i18n="basecore_p">Final target. Destroy the enemy base to win. Only commit when inhibitors are open and the enemy is down.</p>
+          </article>
+          <article>
+            <h3 data-i18n="inhib_t">Inhibitor turret</h3>
+            <p data-i18n="inhib_p">Last defense before the base. Taking it opens the high ground and makes base sieges much safer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="tools_eyebrow">Farming Tools</p>
+        <h2 data-i18n="tools_title">Spells &amp; items that help you farm</h2>
+        <div class="mode-grid">
+          <article>
+            <h3 data-i18n="retri_t">Retribution</h3>
+            <p data-i18n="retri_p">Jungler battle spell. Damages monsters hard and helps secure Turtle/Lord. Required for most junglers.</p>
+          </article>
+          <article>
+            <h3 data-i18n="exec_t">Execute</h3>
+            <p data-i18n="exec_p">Gold Lane spell. Finishes low-HP heroes and helps snowball after successful trades/farm leads.</p>
+          </article>
+          <article>
+            <h3 data-i18n="jungle_eq_t">Jungle equipment</h3>
+            <p data-i18n="jungle_eq_p">Bought with Retribution. Speeds up monster clear and upgrades into stronger jungler items.</p>
+          </article>
+          <article>
+            <h3 data-i18n="wave_t">Wave-clear items</h3>
+            <p data-i18n="wave_p">Items with AoE or attack effects (for example magic multi-target or physical cleave) help farm lanes faster safely.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="prio_eyebrow">Farming Priority</p>
+        <h2 data-i18n="prio_title">What to take first</h2>
+        <ol class="how-list">
+          <li>
+            <span class="how-num">1</span>
+            <div>
+              <h3 data-i18n="prio1_t">Your lane / your jungle</h3>
+              <p data-i18n="prio1_p">Don’t steal teammate farm unless they are dead or the wave will waste under turret.</p>
+            </div>
+          </li>
+          <li>
+            <span class="how-num">2</span>
+            <div>
+              <h3 data-i18n="prio2_t">Secure buffs on cooldown</h3>
+              <p data-i18n="prio2_p">Orange/Blue buffs are tempo. Missing them for free puts you behind.</p>
+            </div>
+          </li>
+          <li>
+            <span class="how-num">3</span>
+            <div>
+              <h3 data-i18n="prio3_t">Turtle when the map allows</h3>
+              <p data-i18n="prio3_p">Only start Turtle if you have vision and numbers nearby.</p>
+            </div>
+          </li>
+          <li>
+            <span class="how-num">4</span>
+            <div>
+              <h3 data-i18n="prio4_t">Lord after a won fight</h3>
+              <p data-i18n="prio4_p">Best time: enemy team wiped or forced back. Then push with Lord.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="page-nav">
+          <a class="btn btn-store" href="rollar.html" data-i18n="back_roles">← Roles</a>
+          <a class="btn btn-play" href="boshlash.html" data-i18n="play_now_arrow">Play Now →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span>Mobile Legends</span> — fan site. Official game by Moonton / Mobile Legends: Bang Bang.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="i18n.js?v=admin-ico1"></script>
+  <script src="guide-items.js"></script>
+</body>
+</html>

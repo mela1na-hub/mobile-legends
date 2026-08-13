@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play — Mobile Legends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">Mobile Legends</a>
+    <nav class="nav" id="mainNav">
+      <a href="oyun.html" data-i18n="nav_about">About</a>
+      <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+      <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a href="guide.html" data-i18n="nav_equip">Equipments</a>
+      <a class="is-active" href="boshlash.html" data-i18n="nav_play">Play</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="section cta">
+      <div class="section-inner cta-inner">
+        <p class="brand-sm">Mobile Legends</p>
+        <h2 data-i18n="play_title">Land of Dawn is waiting.</h2>
+        <p class="section-lead" data-i18n="play_lead">Download the game on your phone and start your first battle.</p>
+        <div class="cta-actions">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.mobile.legends" target="_blank" rel="noopener noreferrer" data-i18n="dl_google">Download on Google Play</a>
+          <a class="btn btn-store" href="https://apps.apple.com/app/mobile-legends-bang-bang/id1160056295" target="_blank" rel="noopener noreferrer" data-i18n="dl_apple">Download on App Store</a>
+        </div>
+        <div class="page-nav">
+          <a class="btn btn-store" href="rollar.html" data-i18n="back_roles">← Roles</a>
+          <a class="btn btn-store" href="index.html" data-i18n="nav_home">Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span>Mobile Legends</span> — fan site. Official game by Moonton / Mobile Legends: Bang Bang.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="i18n.js?v=admin-ico1"></script>
+</body>
+</html>

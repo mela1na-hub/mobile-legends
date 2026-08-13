@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heroes — Mobile Legends</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">Mobile Legends</a>
+    <nav class="nav" id="mainNav">
+      <a href="oyun.html" data-i18n="nav_about">About</a>
+      <a class="is-active" href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+      <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a href="guide.html" data-i18n="nav_equip">Equipments</a>
+      <a href="boshlash.html" data-i18n="nav_play">Play</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="section heroes">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-i18n="heroes_eyebrow">Heroes</p>
+        <h2 data-i18n="heroes_title">Featured fighters</h2>
+        <p class="section-lead" data-i18n="heroes_lead">Selected heroes with role, playstyle, and a short overview.</p>
+
+        <div class="hero-profiles" id="featuredHeroes">
+          <p class="section-lead" data-i18n="roster_loading">Loading hero list…</p>
+        </div>
+
+        <div class="heroes-more">
+          <button type="button" class="heroes-more-btn" id="allHeroesBtn" aria-expanded="false" aria-controls="allHeroesPanel">
+            <span class="heroes-more-plus">+</span>
+            <span class="heroes-more-label" data-i18n="heroes_more_label">127 Heroes</span>
+            <span class="heroes-more-hint" data-i18n="heroes_more_hint">Tap to open full roster</span>
+          </button>
+        </div>
+
+        <section class="all-heroes-panel" id="allHeroesPanel" hidden>
+          <div class="all-heroes-head">
+            <div>
+              <p class="section-eyebrow" data-i18n="roster_eyebrow">Full Roster</p>
+              <h3 data-i18n="roster_title">All heroes</h3>
+              <p class="section-lead" id="allHeroesLead" data-i18n="roster_loading">Loading hero list…</p>
+            </div>
+            <button type="button" class="btn btn-store" id="allHeroesClose" data-i18n="close">Close</button>
+          </div>
+          <div class="all-heroes-grid" id="allHeroesGrid" aria-live="polite"></div>
+        </section>
+
+        <div class="page-nav">
+          <a class="btn btn-store" href="oyun.html" data-i18n="back_about">← About</a>
+          <a class="btn btn-play" href="rollar.html" data-i18n="to_roles">Roles →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span>Mobile Legends</span> — fan site. Official game by Moonton / Mobile Legends: Bang Bang.</p>
+  </footer>
+  <div class="hero-detail-modal" id="heroDetailModal" hidden>
+    <div class="hero-detail-backdrop" data-close></div>
+    <div class="hero-detail-card" role="dialog" aria-modal="true" aria-labelledby="heroDetailName">
+      <button type="button" class="hero-modal-close" data-close data-i18n-aria="close" aria-label="Close">×</button>
+      <div class="hero-detail-body">
+        <div class="hero-detail-top">
+          <img id="heroDetailIcon" alt="" width="120" height="120" />
+          <div>
+            <p class="chip-role" id="heroDetailType"></p>
+            <h3 id="heroDetailName"></h3>
+            <p id="heroDetailDes"></p>
+          </div>
+        </div>
+        <h4 class="skills-title" data-i18n="skills_title">Skills</h4>
+        <div class="skill-list" id="heroDetailSkills"></div>
+        <button type="button" class="btn btn-store hero-modal-dismiss" data-close data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="i18n.js?v=admin-ico1"></script>
+  <script src="featured-heroes.js?v=1"></script>
+  <script src="all-heroes.js?v=4"></script>
+</body>
+</html>

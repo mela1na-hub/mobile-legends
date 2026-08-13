@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirish — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+  <link rel="stylesheet" href="admin.css?v=2" />
+</head>
+<body class="admin-body">
+  <div class="admin-login">
+    <div class="admin-login-card">
+      <p class="eyebrow">Mobile Legends</p>
+      <h1>Admin panel</h1>
+      <p class="admin-login-lead">Sayt kontentini boshqarish uchun kiring.</p>
+      <form id="loginForm" class="admin-form">
+        <label>
+          Login
+          <input type="text" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          Parol
+          <input type="password" name="password" autocomplete="current-password" required />
+        </label>
+        <p class="admin-error" id="loginError" hidden></p>
+        <button type="submit" class="btn btn-play">Kirish</button>
+      </form>
+      <a class="admin-back" href="index.html">← Saytga qaytish</a>
+    </div>
+  </div>
+  <script src="admin-login.js?v=1"></script>
+</body>
+</html>

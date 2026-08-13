@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Legends — Bang Bang</title>
+  <meta name="description" content="Mobile Legends: Bang Bang — the ultimate 5v5 battle arena." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=admin-ico1" />
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <a class="logo" href="index.html">Mobile Legends</a>
+    <nav class="nav" id="mainNav">
+      <a href="oyun.html" data-i18n="nav_about">About</a>
+      <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+      <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+      <a href="guide.html" data-i18n="nav_equip">Equipments</a>
+      <a href="boshlash.html" data-i18n="nav_play">Play</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <span class="lang-switch-label">Language</span>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">ENG</button>
+      <button type="button" class="lang-btn" data-lang="uz" aria-pressed="false">UZB</button>
+      <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RUS</button>
+    </div>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="stage">
+      <div class="stage-left">
+        <div class="copy">
+          <p class="eyebrow" data-i18n="eyebrow">5V5 Battle Arena</p>
+          <h1 class="title">
+            <span class="title-gold">Mobile</span>
+            <span class="title-silver">Legends</span>
+          </h1>
+          <p class="bang"><span></span> Bang Bang <span></span></p>
+          <p class="lead" data-i18n-lead>
+            Join millions of players worldwide in the ultimate 5v5 battle arena.
+            Team up. Strategize. <em>Become a legend.</em>
+          </p>
+          <div class="actions">
+            <a class="btn btn-play" href="boshlash.html"><span data-i18n="btn_play">Play Now</span> <span data-i18n-keep>›</span></a>
+            <a class="btn btn-store" href="oyun.html" data-i18n="btn_about">About the Game</a>
+          </div>
+          <div class="home-links">
+            <a href="oyun.html" data-i18n="nav_about">About</a>
+            <a href="qahramonlar.html" data-i18n="nav_heroes">Heroes</a>
+            <a href="rollar.html" data-i18n="nav_roles">Roles</a>
+            <a href="guide.html" data-i18n="nav_equip">Equipments</a>
+            <a href="boshlash.html" data-i18n="nav_play">Play</a>
+          </div>
+        </div>
+      </div>
+      <div class="stage-right" aria-hidden="true">
+        <img class="poster" src="images/heroes-poster.png" alt="" />
+        <div class="poster-glow"></div>
+        <div class="poster-shine"></div>
+        <div class="fx-embers">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="i18n.js?v=admin-ico1"></script>
+</body>
+</html>
