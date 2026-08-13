@@ -21,6 +21,13 @@
       lead_em: "Become a legend.",
       btn_play: "Play Now",
       btn_about: "About the Game",
+      explore_eyebrow: "Explore",
+      explore_title: "Pick a path",
+      card_about_p: "Map, ranks and how the game works.",
+      card_heroes_p: "Roster, skills and playstyle tips.",
+      card_roles_p: "Gold, EXP, Mid, Roam and Jungle.",
+      card_equip_p: "Items, passives and farming.",
+      card_play_p: "Download and jump into a match.",
 
       // About
       about_eyebrow: "About the Game",
@@ -415,6 +422,13 @@
       lead_em: "Afsonaga aylaning.",
       btn_play: "Hozir o‘ynash",
       btn_about: "O‘yin haqida",
+      explore_eyebrow: "Bo‘limlar",
+      explore_title: "Yo‘lni tanlang",
+      card_about_p: "Xarita, ranklar va o‘yin qoidalari.",
+      card_heroes_p: "Ro‘yxat, skilllar va uslub maslahatlari.",
+      card_roles_p: "Gold, EXP, Mid, Roam va Jungle.",
+      card_equip_p: "Itemlar, passivlar va farm.",
+      card_play_p: "Yuklab oling va o‘yinga kiring.",
 
       about_eyebrow: "O‘yin haqida",
       about_lead:
@@ -801,6 +815,13 @@
       lead_em: "Станьте легендой.",
       btn_play: "Играть сейчас",
       btn_about: "Об игре",
+      explore_eyebrow: "Разделы",
+      explore_title: "Выберите путь",
+      card_about_p: "Карта, ранги и правила игры.",
+      card_heroes_p: "Состав, скиллы и советы по стилю.",
+      card_roles_p: "Gold, EXP, Mid, Roam и Jungle.",
+      card_equip_p: "Предметы, пассивы и фарм.",
+      card_play_p: "Скачайте и зайдите в матч.",
 
       about_eyebrow: "Об игре",
       about_lead:
