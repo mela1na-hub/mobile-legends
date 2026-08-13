@@ -10,7 +10,7 @@
         "Name":  "Miya",
         "Id":  "1",
         "Type":  "Marksman",
-        "Cover":  "images/hero-miya.png",
+        "Cover":  "images/hero-miya.jpg",
         "Icon":  "images/icon-miya.png"
     },
     {
@@ -38,14 +38,14 @@
         "Name":  "Gusion",
         "Id":  "56",
         "Type":  "Assassin",
-        "Cover":  "images/hero-gusion.png",
+        "Cover":  "images/hero-gusion.jpg",
         "Icon":  "images/icon-gusion.png"
     },
     {
         "Name":  "Fanny",
         "Id":  "17",
         "Type":  "Assassin",
-        "Cover":  "images/hero-fanny.png",
+        "Cover":  "images/hero-fanny.jpg",
         "Icon":  "images/icon-fanny.png"
     },
     {
@@ -66,7 +66,7 @@
         "Name":  "Layla",
         "Id":  "18",
         "Type":  "Marksman",
-        "Cover":  "images/hero-layla.png",
+        "Cover":  "images/hero-layla.jpg",
         "Icon":  "images/icon-layla.png"
     }
 ]

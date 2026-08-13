@@ -29,7 +29,7 @@
                                                       "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/6901ce78442d21a6da29128d2ed32f80.png"
                                                   }
                                               ],
-                                   "icon":  "images/lanes/melissa.png",
+                                   "icon":  "images/lanes/melissa.jpg",
                                    "type":  "Marksman",
                                    "des":  ""
                                },
@@ -227,7 +227,7 @@
                                                      "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/9646f24259b68d9ce6ad3054fb8f7e2d.png"
                                                  }
                                              ],
-                                  "icon":  "images/lanes/lesley.png",
+                                  "icon":  "images/lanes/lesley.jpg",
                                   "type":  "Marksman",
                                   "des":  ""
                               },
@@ -326,7 +326,7 @@
                                                      "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/539fe430818f64b12c0e2919ad7e1c4f.png"
                                                  }
                                              ],
-                                  "icon":  "images/lanes/hanabi.png",
+                                  "icon":  "images/lanes/hanabi.jpg",
                                   "type":  "Marksman",
                                   "des":  ""
                               },
@@ -788,7 +788,7 @@
                                                    "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/978854a9ee93bee5eda7a28b0bcf8e7c.png"
                                                }
                                            ],
-                                "icon":  "images/lanes/ruby.png",
+                                "icon":  "images/lanes/ruby.jpg",
                                 "type":  "Fighter",
                                 "des":  ""
                             },
@@ -854,7 +854,7 @@
                                                     "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/6bee7a4d58e50ecf0784cda619eac21c.png"
                                                 }
                                             ],
-                                 "icon":  "images/lanes/argus.png",
+                                 "icon":  "images/lanes/argus.jpg",
                                  "type":  "Fighter",
                                  "des":  ""
                              },
@@ -1250,7 +1250,7 @@
                                                   "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/ae59e0e5cfcde09760ecee7e812afea0.png"
                                               }
                                           ],
-                               "icon":  "images/lanes/yve.png",
+                               "icon":  "images/lanes/yve.jpg",
                                "type":  "Mage",
                                "des":  ""
                            },
@@ -2471,7 +2471,7 @@
                                                   "icon":  "https://akmweb.youngjoygame.com/web/mlweb/image/res/miya/skill/0f4d2dd2a1c45d492372e95cd463d7c2.png"
                                               }
                                           ],
-                               "icon":  "images/lanes/yin.png",
+                               "icon":  "images/lanes/yin.jpg",
                                "type":  "Fighter",
                                "des":  ""
                            },
