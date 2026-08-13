@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 body {
@@ -31,7 +32,8 @@ body {
   color: var(--ink);
   background: var(--bg);
   overflow-x: hidden;
-  line-height: 1.55;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 a {
@@ -62,7 +64,7 @@ img {
 
 .logo {
   font-family: var(--font-display);
-  font-size: 1.65rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -72,9 +74,7 @@ img {
 .nav {
   display: flex;
   gap: 1.75rem;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .nav a {
@@ -424,7 +424,7 @@ img {
 }
 
 .eyebrow {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.82rem, 1.2vw, 0.95rem);
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -437,7 +437,7 @@ img {
   font-weight: 800;
   line-height: 0.88;
   text-transform: uppercase;
-  font-size: clamp(4.6rem, 9.5vw, 7.8rem);
+  font-size: clamp(2.4rem, 5.2vw, 4rem);
   letter-spacing: 0.02em;
 }
 
@@ -464,7 +464,7 @@ img {
   align-items: center;
   gap: 0.85rem;
   margin-top: 0.7rem;
-  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -482,7 +482,7 @@ img {
   margin-top: 1.6rem;
   max-width: 38rem;
   color: var(--muted);
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
   font-weight: 400;
   line-height: 1.55;
 }
@@ -506,8 +506,8 @@ img {
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  min-height: 56px;
-  padding: 0.9rem 1.7rem;
+  min-height: 44px;
+  padding: 0.65rem 1.25rem;
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
@@ -528,7 +528,7 @@ img {
 }
 
 .btn-play span {
-  font-size: 1.25rem;
+  font-size: 1.02rem;
   line-height: 1;
 }
 
@@ -564,7 +564,7 @@ img {
 
 .section h2 {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5.5vw, 4rem);
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
   letter-spacing: 0.04em;
   line-height: 1;
   max-width: 18ch;
@@ -577,7 +577,7 @@ img {
   max-width: 48rem;
   color: var(--muted);
   font-weight: 400;
-  font-size: clamp(1.12rem, 1.6vw, 1.35rem);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
   line-height: 1.6;
 }
 
@@ -869,8 +869,12 @@ img {
 }
 
 @media (max-width: 640px) {
+  html {
+    font-size: 13.5px;
+  }
+
   .title {
-    font-size: clamp(3.4rem, 18vw, 5rem);
+    font-size: clamp(2rem, 10vw, 2.55rem);
   }
 
   .actions {
@@ -898,7 +902,7 @@ img {
 
 .about-page h1 {
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 7.5vw, 5.2rem);
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -908,7 +912,7 @@ img {
 
 .about-page .section-lead.wide {
   max-width: 60rem;
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-size: clamp(0.95rem, 1.4vw, 1.12rem);
   line-height: 1.65;
 }
 
@@ -922,11 +926,11 @@ img {
 }
 
 .about-page .section-eyebrow {
-  font-size: 1.05rem;
+  font-size: 0.82rem;
 }
 
 .about-page h2 {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-size: clamp(1.55rem, 3.2vw, 2.2rem);
 }
 
 .about-block:nth-child(even) {
@@ -1325,7 +1329,7 @@ img {
 
 .rank-detail-body h3 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1686,7 +1690,7 @@ img {
 
 .heroes-more-plus {
   font-family: var(--font-display);
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   font-weight: 800;
   line-height: 1;
   color: var(--gold);
@@ -1728,7 +1732,7 @@ img {
 
 .all-heroes-head h3 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1914,7 +1918,7 @@ img {
 
 .hero-detail-top h3 {
   font-family: var(--font-display);
-  font-size: 2.1rem;
+  font-size: 1.55rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0.3rem 0 0.45rem;
@@ -1954,7 +1958,7 @@ img {
 }
 
 .roles-page h2 {
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
 }
 
 .roles-page .section-lead {
@@ -2173,7 +2177,7 @@ img {
 
 .hero-modal-top h3 {
   font-family: var(--font-display);
-  font-size: 2.1rem;
+  font-size: 1.55rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0.3rem 0 0.5rem;
