@@ -837,6 +837,10 @@ img {
     order: -1;
   }
 
+  .page-home .stage-right {
+    min-height: 34vh;
+  }
+
   .stage-right::before {
     background: linear-gradient(180deg, transparent 40%, #060a11 100%);
   }
@@ -844,6 +848,10 @@ img {
   .copy {
     max-width: 100%;
     padding-bottom: 3rem;
+  }
+
+  .page-home .copy {
+    padding-bottom: 1.1rem;
   }
 
   .traits,
@@ -877,6 +885,85 @@ img {
     font-size: clamp(2rem, 10vw, 2.55rem);
   }
 
+  .page-home .stage {
+    height: 100dvh;
+    min-height: 100svh;
+    max-height: 100dvh;
+    overflow: hidden;
+    grid-template-rows: minmax(0, 1fr) auto;
+    padding-top: 3.4rem;
+  }
+
+  .page-home .stage-right {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .page-home .poster {
+    animation: none;
+    transform: none;
+    object-position: center 18%;
+  }
+
+  .page-home .copy {
+    padding: 0.45rem 1.1rem 0.85rem;
+  }
+
+  .page-home .eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.28rem;
+  }
+
+  .page-home .title {
+    font-size: 1.55rem;
+    line-height: 0.9;
+  }
+
+  .page-home .bang {
+    font-size: 0.62rem;
+    margin-top: 0.2rem;
+    gap: 0.45rem;
+  }
+
+  .page-home .bang span {
+    width: 28px;
+  }
+
+  .page-home .lead {
+    font-size: 0.72rem;
+    line-height: 1.35;
+    margin-top: 0.4rem;
+  }
+
+  .page-home .actions {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-top: 0.55rem;
+    gap: 0.4rem;
+  }
+
+  .page-home .btn {
+    width: auto;
+    flex: 1;
+    min-height: 36px;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.68rem;
+  }
+
+  .page-home .btn-play span {
+    font-size: 0.78rem;
+  }
+
+  .page-home .logo {
+    font-size: 1.05rem;
+  }
+
+  .page-home .fx-embers {
+    display: none;
+  }
+
   .actions {
     flex-direction: column;
     align-items: stretch;
@@ -884,6 +971,10 @@ img {
 
   .btn {
     width: 100%;
+  }
+
+  .page-home .actions .btn {
+    width: auto;
   }
 }
 
