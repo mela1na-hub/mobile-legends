@@ -11,7 +11,15 @@
     "Fighter / Tank",
     "Assassin / Mage",
   ];
-  const ITEM_CATS = ["Attack", "Magic", "Defense", "Boots", "Jungle / Roam"];
+  const ITEM_CATS = [
+    "Attack",
+    "Attack & Magic",
+    "Defense",
+    "Jungling",
+    "Magic",
+    "Movement",
+    "Roam",
+  ];
   const LANGS = [
     ["en", "EN"],
     ["uz", "UZ"],

@@ -1,9 +1,12 @@
 {
     "categories":  [
                        "Attack",
-                       "Boots",
+                       "Attack \u0026 Magic",
                        "Defense",
-                       "Magic"
+                       "Jungling",
+                       "Magic",
+                       "Movement",
+                       "Roam"
                    ],
     "items":  [
                   {
@@ -115,175 +118,175 @@
                       "name":  "Arcane Boots",
                       "des":  "Movement Speed boots with Magic Penetration — helps mages deal more damage early.",
                       "icon":  "images/items/arcane-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2304
                   },
                   {
                       "name":  "Arcane Boots - Favor",
                       "des":  "Unique Passive - Passive - Favor: Success",
                       "icon":  "images/items/arcane-boots-favor.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3543
                   },
                   {
                       "name":  "Demon Boots",
                       "des":  "Unique Passive - Mysticism: Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within 2s after taking damage from the hero.)",
                       "icon":  "images/items/demon-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2308
                   },
                   {
                       "name":  "Demon Boots - Favor",
                       "des":  "Unique Passive - Passive - Favor: Success",
                       "icon":  "images/items/demon-boots-favor.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3573
                   },
                   {
                       "name":  "Flame Hunter\u0027s Demon Boots",
                       "des":  "Unique Passive - Mysticism: Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within 2s after taking damage from the hero.)",
                       "icon":  "images/items/flame-hunter-s-demon-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3472
                   },
                   {
                       "name":  "Flame Hunter\u0027s Magic Boots",
                       "des":  "Unique Passive - Hunter: After dealing damage to a Creep, deal 25 +  True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
                       "icon":  "images/items/flame-hunter-s-magic-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3432
                   },
                   {
                       "name":  "Flame Hunter\u0027s Swift Boots",
                       "des":  "Unique Passive - Hunter: After dealing damage to a Creep, deal 25 +  True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
                       "icon":  "images/items/flame-hunter-s-swift-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3452
                   },
                   {
                       "name":  "Flame Hunter\u0027s Warrior Boots",
                       "des":  "Unique Passive - Valor: Gain 4 extra Physical Defense for 3s when taking Physical Damage, up to 20.",
                       "icon":  "images/items/flame-hunter-s-warrior-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3412
                   },
                   {
                       "name":  "Ice Hunter\u0027s Arcane Boots",
                       "des":  "Unique Passive - Hunter: After dealing damage to a Creep, deal 25 +  True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
                       "icon":  "images/items/ice-hunter-s-arcane-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3441
                   },
                   {
                       "name":  "Ice Hunter\u0027s Magic Boots",
                       "des":  "Unique Passive - Hunter: After dealing damage to a Creep, deal 25 +  True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
                       "icon":  "images/items/ice-hunter-s-magic-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3431
                   },
                   {
                       "name":  "Ice Hunter\u0027s Rapid Boots",
                       "des":  "Unique Passive - Side Effect: Loses 25 Movement Speed for 5s upon dealing or taking damage.",
                       "icon":  "images/items/ice-hunter-s-rapid-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3461
                   },
                   {
                       "name":  "Ice Hunter\u0027s Swift Boots",
                       "des":  "Unique Passive - Hunter: After dealing damage to a Creep, deal 25 +  True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
                       "icon":  "images/items/ice-hunter-s-swift-boots.png",
-                      "category":  "Boots",
+                      "category":  "Jungling",
                       "id":  3451
                   },
                   {
                       "name":  "Magic Boots",
                       "des":  "Movement Speed boots with Cooldown Reduction — cast skills more often.",
                       "icon":  "images/items/magic-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2303
                   },
                   {
                       "name":  "Magic Boots - Conceal",
                       "des":  "Active Skill - Conceal: Success",
                       "icon":  "images/items/magic-boots-conceal.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3531
                   },
                   {
                       "name":  "Magic Boots - Encourage",
                       "des":  "Unique Passive - Passive - Encourage: Success",
                       "icon":  "images/items/magic-boots-encourage.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3532
                   },
                   {
                       "name":  "Magic Boots - Favor",
                       "des":  "Unique Passive - Passive - Favor: Success",
                       "icon":  "images/items/magic-boots-favor.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3533
                   },
                   {
                       "name":  "Rapid Boots- Conceal",
                       "des":  "Active Skill - Conceal: Success",
                       "icon":  "images/items/rapid-boots-conceal.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3561
                   },
                   {
                       "name":  "Swift Boots",
                       "des":  "Movement Speed boots with Attack Speed — strong for marksmen and fighters.",
                       "icon":  "images/items/swift-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2305
                   },
                   {
                       "name":  "Tough Boots",
                       "des":  "Unique Passive - Fortitude: CC and Slow Duration reduced by 30%",
                       "icon":  "images/items/tough-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2302
                   },
                   {
                       "name":  "Tough Boots - Dire Hit",
                       "des":  "Unique Passive - Passive - Dire Hit: The next attack against enemy heroes below 35% HP deals 7-18% of their Max HP as extra Hybrid Damage (half Magic and half Physical).",
                       "icon":  "images/items/tough-boots-dire-hit.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3524
                   },
                   {
                       "name":  "Tough Boots - Encourage",
                       "des":  "Unique Passive - Passive - Encourage: Success",
                       "icon":  "images/items/tough-boots-encourage.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3522
                   },
                   {
                       "name":  "Warrior Boots",
                       "des":  "Unique Passive - Valor: Gain 4 extra Physical Defense for 3s when taking Physical Damage, up to 20.",
                       "icon":  "images/items/warrior-boots.png",
-                      "category":  "Boots",
+                      "category":  "Movement",
                       "id":  2301
                   },
                   {
                       "name":  "Warrior Boots - Conceal",
                       "des":  "Active Skill - Conceal: Success",
                       "icon":  "images/items/warrior-boots-conceal.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3511
                   },
                   {
                       "name":  "Warrior Boots - Encourage",
                       "des":  "Unique Passive - Passive - Encourage: Success",
                       "icon":  "images/items/warrior-boots-encourage.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3512
                   },
                   {
                       "name":  "Warrior Boots - Favor",
                       "des":  "Unique Passive - Passive - Favor: Success",
                       "icon":  "images/items/warrior-boots-favor.png",
-                      "category":  "Boots",
+                      "category":  "Roam",
                       "id":  3513
                   },
                   {
@@ -423,7 +426,7 @@
                       "name":  "Fleeting Time",
                       "des":  "Unique Passive - Timestream: Hero kills or assists reduce the Ultimate\u0027s current cooldown by 30%.",
                       "icon":  "images/items/fleeting-time.png",
-                      "category":  "Magic",
+                      "category":  "Attack",
                       "id":  3109
                   },
                   {

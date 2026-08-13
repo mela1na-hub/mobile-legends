@@ -3,9 +3,19 @@
   const filters = document.getElementById("itemFilters");
   if (!grid || !filters) return;
 
+  const PAGE_ORDER = [
+    "Attack",
+    "Attack & Magic",
+    "Defense",
+    "Jungling",
+    "Magic",
+    "Movement",
+    "Roam",
+  ];
+
   let items = [];
   let active = "All";
-  let categories = ["Attack", "Magic", "Defense", "Boots", "Jungle / Roam"];
+  let categories = PAGE_ORDER.slice();
 
   function tt(key, vars) {
     return window.MLBB && window.MLBB.t ? window.MLBB.t(key, vars) : key;
@@ -15,12 +25,20 @@
     const map = {
       All: "cat_all",
       Attack: "cat_attack",
-      Magic: "cat_magic",
+      "Attack & Magic": "cat_attack_magic",
       Defense: "cat_defense",
-      Boots: "cat_boots",
-      "Jungle / Roam": "cat_jungle",
+      Jungling: "cat_jungling",
+      Magic: "cat_magic",
+      Movement: "cat_movement",
+      Roam: "cat_roam",
+      Boots: "cat_movement",
+      "Jungle / Roam": "cat_jungling",
     };
     return map[c] ? tt(map[c]) : c;
+  }
+
+  function slug(cat) {
+    return "items-" + String(cat).toLowerCase().replace(/[^a-z0-9]+/g, "-");
   }
 
   function card(item) {
@@ -41,10 +59,6 @@
     const body = document.createElement("div");
     body.className = "item-card-body";
 
-    const cat = document.createElement("p");
-    cat.className = "item-cat";
-    cat.textContent = catLabel(item.category || "Attack");
-
     const title = document.createElement("h3");
     title.textContent = item.name;
 
@@ -52,13 +66,20 @@
     des.className = "item-des";
     des.textContent = item.des || "";
 
-    body.append(cat, title, des);
+    body.append(title, des);
     el.append(img, body);
     return el;
   }
 
+  function usedCategories() {
+    const present = new Set(items.map((i) => i.category || "Attack"));
+    return PAGE_ORDER.filter((c) => present.has(c) || categories.includes(c)).filter(
+      (c) => items.some((i) => i.category === c)
+    );
+  }
+
   function renderFilters() {
-    const cats = ["All"].concat(categories);
+    const cats = ["All"].concat(usedCategories());
     filters.innerHTML = "";
     cats.forEach((c) => {
       const b = document.createElement("button");
@@ -70,18 +91,50 @@
     });
   }
 
+  function section(cat, list) {
+    const wrap = document.createElement("section");
+    wrap.className = "item-section";
+    wrap.id = slug(cat);
+
+    const head = document.createElement("div");
+    head.className = "item-section-head";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = catLabel(cat);
+
+    const count = document.createElement("p");
+    count.className = "item-section-count";
+    count.textContent = String(list.length);
+
+    head.append(h2, count);
+
+    const inner = document.createElement("div");
+    inner.className = "items-grid";
+    list.forEach((item) => inner.appendChild(card(item)));
+
+    wrap.append(head, inner);
+    return wrap;
+  }
+
   function render() {
     grid.innerHTML = "";
-    const list =
-      active === "All" ? items : items.filter((i) => i.category === active);
+    const pages = usedCategories();
+    const show = active === "All" ? pages : pages.filter((c) => c === active);
+    const frag = document.createDocumentFragment();
+    let any = false;
 
-    if (!list.length) {
+    show.forEach((cat) => {
+      const list = items.filter((i) => i.category === cat);
+      if (!list.length) return;
+      any = true;
+      frag.appendChild(section(cat, list));
+    });
+
+    if (!any) {
       grid.innerHTML = '<p class="item-empty">' + tt("item_empty") + "</p>";
       return;
     }
 
-    const frag = document.createDocumentFragment();
-    list.forEach((item) => frag.appendChild(card(item)));
     grid.appendChild(frag);
   }
 
@@ -91,6 +144,12 @@
     });
     active = btn.dataset.filter || "All";
     render();
+    if (active !== "All") {
+      const target = document.getElementById(slug(active));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      grid.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   filters.addEventListener("click", (e) => {
@@ -106,9 +165,11 @@
     })
     .then((data) => {
       items = Array.isArray(data.items) ? data.items : [];
-      categories =
-        data.categories ||
-        ["Attack", "Magic", "Defense", "Boots", "Jungle / Roam"];
+      const fromFile = Array.isArray(data.categories) ? data.categories : [];
+      categories = PAGE_ORDER.filter(
+        (c) => fromFile.includes(c) || items.some((i) => i.category === c)
+      );
+      if (!categories.length) categories = PAGE_ORDER.slice();
       renderFilters();
       render();
     })
